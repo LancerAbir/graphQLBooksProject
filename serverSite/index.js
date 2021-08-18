@@ -7,8 +7,8 @@ const schema = require("./schema/schema");
 const app = express();
 
 //** Middle Ware */
-// const middleware = [cors()];
-// app.use(middleware);
+const middleware = [cors()];
+app.use(middleware);
 
 app.use(
    "/graphql",
